@@ -1,0 +1,36 @@
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: #ffffff;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.section-padding-not {
+  padding-top: 0;
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
+.section-background {
+  background: #f5f4fa;
+}
+
+.section__title {
+  @include font(700, 28px, 1.17, 0.03em);
+  text-align: center;
+  color: var(--primary-title-color);
+  @media screen and (min-width: 1200px) {
+    @include font(700, 36px, 1.17, 0.03em);
+  }
+}
+
+.section__title-mb {
+  margin-bottom: 30px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
+}
