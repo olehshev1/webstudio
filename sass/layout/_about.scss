@@ -1,0 +1,27 @@
+.about {
+  display: flex;
+}
+
+.about__item {
+  position: relative;
+  width: 370px;
+  flex-basis: calc((100% - 60px) / 3);
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.about__text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  @include font(700, 14px, 1.14, 0.03em);
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--second-text-btn-color);
+  @extend %flex-list;
+  align-items: center;
+  min-height: 70px;
+  width: 370px;
+  background: rgba(47, 48, 58, 0.8);
+}
